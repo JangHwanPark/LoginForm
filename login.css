@@ -1,0 +1,126 @@
+/* body 중앙정렬 */
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#content {
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    padding: 4em 2em 3em 2em;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+#login_box {
+    width: 30em;
+    height: 100%;
+}
+
+#logo {
+    font-size: 2.5em;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+#logo h2 {
+    margin-top: 0.5em;
+}
+
+.login_input {
+    width: 65%;
+    height: 3em;
+    border-radius: 5px;
+    padding: 0 0.5em;
+    margin: 0.2em auto;
+    border: 1px solid #000;
+}
+
+.text_input {
+    margin: 0.4em;
+}
+
+.login_input:focus {
+    outline: none;
+}
+
+.login_input input {
+    padding: 0;
+    height: 80%;
+    width: 80%;
+    font-size: 13px;
+    vertical-align: middle;
+    border: none;
+}
+
+.login_submit {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+.input_submit {
+    width: 69%;
+    height: 2em;
+    border-radius: 5px;
+    padding: 0 0.5em;
+    margin: 0 auto;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.login_remember {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+.login_check {
+    margin-top: 1.2em;
+    display: inline-block;
+}
+
+.login_check a {
+    text-decoration: none;
+    color: #000;
+}
+
+#find, #join {
+    margin-top: 1.5em;
+}
+
+#social_account {
+    margin-top: 1.5em;
+    margin-bottom: 0.2em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.button_login i {
+    font-size: 2em;
+}
+
+footer {
+    margin-top: 1.5em;
+    bottom: 0;
+    z-index: 1;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color:#000;
+}

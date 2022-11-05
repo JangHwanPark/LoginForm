@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6f111b5450.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/JavaScript_University/login/login.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <main id="content">
+        <div class="container">
+            <form action="login" method="post">
+                <section id="login_box">
+                    <header id="logo">
+                        <a href="#">
+                        <h2>Login</h2>
+                        </a>
+                    </header>
+                    <article class="login_input" id="id_box">
+                        <label for="username"></label>
+                        <i class="fa-solid fa-user"></i>
+                        <input class="text_input" type="text" name="username" id="username" placeholder="아이디를 입력하세요.">
+                    </article>
+
+                    <article class="login_input" id="pwd_box">
+                        <label for="password"></label>
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="text_input" type="password" name="password" id="password"
+                            placeholder="비밀번호를 입력하세요.">
+                    </article>
+
+                    <article class="login_submit" id="submit_box">
+                        <button type="button" id="Login" class="input_submit">로그인</button>
+                    </article>
+
+                    <article class="login_remember" id="remember_box">
+                        <label for="remember">Remember me</label>
+                        <input type="checkbox" name="remember" id="remember">
+                    </article>
+
+                    <article class="login_check" id="remember_box">
+                        <a href="#" class="join">회원가입</a>
+                        <a href="#" class="join">아이디 찾기</a>
+                        <a href="#" class="join">비밀번호 찾기</a>
+                    </article>
+
+                </section>
+                <section id="social_login">
+                    <header id="social_account">소셜 계정으로 로그인</header>
+
+                    <label for="kakao"></label>
+                    <button type="button" name="" id="kakao" class="button_login">
+                        <i class="fa-brands fa-kickstarter-k"></i>
+                    </button>
+
+                    <label for="Line"></label>
+                    <button type="button" name="" id="Line" class="button_login">
+                        <i class="fa-brands fa-line"></i>
+                    </button>
+
+                    <label for="apple"></label>
+                    <button type="button" name="" id="apple" class="button_login">
+                        <i class="fa-brands fa-apple"></i>
+                    </button>
+
+                    <label for="facebook"></label>
+                    <button type="button" name="" id="facebook" class="button_login">
+                        <i class="fa-brands fa-facebook"></i>
+                    </button>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <a href="#">이용약관 |</a>
+        <a href="#">개인정보 처리방침 |</a>
+        <a href="#">고객센터</a>
+    </footer>
+</body>
