@@ -1,5 +1,6 @@
 /* body 중앙정렬 */
 body {
+    font-family: 'Nanum Gothic', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +39,7 @@ body {
     margin-top: 0.5em;
 }
 
-.login_input {
+.login_info {
     width: 65%;
     height: 3em;
     border-radius: 5px;
@@ -51,11 +52,11 @@ body {
     margin: 0.4em;
 }
 
-.login_input:focus {
+.login_info:focus {
     outline: none;
 }
 
-.login_input input {
+.login_info input {
     padding: 0;
     height: 80%;
     width: 80%;
@@ -64,7 +65,7 @@ body {
     border: none;
 }
 
-.login_submit {
+#submit_box {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -82,23 +83,19 @@ body {
     font-size: 1.2em;
 }
 
-.login_remember {
+.remember_box {
     margin-top: 0.5em;
     font-size: 1.1em;
 }
 
-.login_check {
+#fine_box {
     margin-top: 1.2em;
     display: inline-block;
 }
 
-.login_check a {
+#fine_box a {
     text-decoration: none;
     color: #000;
-}
-
-#find, #join {
-    margin-top: 1.5em;
 }
 
 #social_account {
