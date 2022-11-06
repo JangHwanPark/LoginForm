@@ -15,6 +15,8 @@
     <br>
     <h3>추후 만들어볼 기능</h3>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    입력한 아이디와 비밀번호가 true면 로그인성공 후 메인페이지 이동<br>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
     로그인 API연동 (Kakao, Line, Apple, Facebook)<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
     메인페이지 제작 후 logo 클릭시 이동 (url변경)<br>
