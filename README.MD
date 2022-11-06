@@ -6,6 +6,20 @@
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
     <h2>작업 목록</h2>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    login_link : `location.href`을 이용해 로고와 버튼 클릭시 web으로 연결<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" /> 
-    function login_link() `location.href`을 이용해 로고와 버튼 클릭시 web으로 연결되도록 하였습니다. (a태그기능)
+    draag : 드래그 & 우클릭 방지기능
+    <br>
+    <h3>추후 만들어볼 기능</h3>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    로그인 API연동 (Kakao, Line, Apple, Facebook)<br>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    메인페이지 제작 후 logo 클릭시 이동 (url변경)<br>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" /> 
+    회원가입폼 다시 제작후 회원가입 텍스트 클릭시 회원가입폼으로 이동 (url변경)<br>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    아이디 찾기, 비밀번호 찾기 제작<br>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
+    footer 사이트 제작
 </div>
