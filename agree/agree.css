@@ -27,7 +27,14 @@ body {
 
 /* 제목 */
 .content .title {
+    font-size: 1.5em;
     text-align: center;
+}
+
+.content .title h2{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
 
 /* 체크박스 */

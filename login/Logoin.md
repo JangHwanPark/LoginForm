@@ -9,7 +9,7 @@
 <div align="left">
     <h2>작업 목록</h2>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
-    Media를 이용한 반응형 웹으로 만들기<br>
+    Media를 이용한 반응형 웹으로 만들기 - X<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
     login_link : `location.href`을 이용해 로고와 버튼 클릭시 web으로 연결<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" /> 
