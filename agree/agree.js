@@ -6,10 +6,10 @@ var agree_btn = document.getElementById('agree_btn');
 var agree_all = document.getElementById('agree-all');
 
 window.onload = function () {
-    function checktAll(selectAll)  {
-        agree_all.forEach((checkbox) => {
-          checkbox.checked = selectAll.checked;
-        })
+  /** 전체 동의 버튼 클릭시 체크박스가 모두 체크되는 함수 */
+    agree_all.onclick = function () {
+      for(let checkbox of agree_check){
+        checkbox.checked = this.checked;
       }
-    agree_all.onclick(this) = checktAll;
+    }
 }

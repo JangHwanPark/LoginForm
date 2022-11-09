@@ -8,6 +8,8 @@
 </div>
 <div align="left">
     <h2>작업 목록</h2>
+    <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" /> 
+    체크박스(agree-all)가 checked될 경우, 다른 체크박스도 모두 체크된<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />
     Media를 이용한 반응형 웹으로 만들기 - X<br>
     <img src="https://img.shields.io/badge/Cachet-000?style=flat&logo=Cachet&logoColor=white" />

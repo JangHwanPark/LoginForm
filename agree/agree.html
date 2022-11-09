@@ -10,15 +10,16 @@
 </head>
 
 <body>
-  <section class="content">
-    <div class="container">
-      <header class="title">
-        <h2>Join Black theme</h2>
-      </header>
-      
-      <!-- 이용약관 -->
-      <article class="agree">
-        <textarea class="textarea">여러분을 환영합니다.
+  <form action="login" method="post">
+    <section class="content">
+      <div class="container">
+        <header class="title">
+          <h2>Join Black theme</h2>
+        </header>
+
+        <!-- 이용약관 -->
+        <article class="agree">
+          <textarea class="textarea">여러분을 환영합니다.
 
 제1조(목적) 이 약관은 업체 회사(전자상거래 사업자)가 운영하는 업체 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
  
@@ -257,15 +258,15 @@
 
 ② “몰”과 이용자 간에 제기된 전자상거래 소송에는 한국법을 적용합니다.
       </textarea>
-      <div class="input-section">
-        <input type="checkbox" id="agree-one" name="agree" value="Y" class="agree-check" />
-        <label for="agree-one">이용약관 동의 <span>(필수)</span></label>
-      </div>
-      </article>
-      
-      <!-- 개인정보 수집 및 이용동의 -->
-      <article class="agree">
-        <textarea class="textarea">개인정보보호법에 따라 본 사이트에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+          <div class="input-section">
+            <input type="checkbox" id="agree-one" name="agree" value="Y" class="agree-check" />
+            <label for="agree-one">이용약관 동의 <span class="required-check">(필수)</span></label>
+          </div>
+        </article>
+
+        <!-- 개인정보 수집 및 이용동의 -->
+        <article class="agree">
+          <textarea class="textarea">개인정보보호법에 따라 본 사이트에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
 
 
                         개인정보처리방침
@@ -406,46 +407,47 @@
 1) 공고일자 : 2018년 05월 01일
 2) 시행일자 : 2018년 05월 01일 
       </textarea>
-      <div class="input-section">
-        <input type="checkbox" id="agree-two" name="agree" value="Y" class="agree-check" />
-        <label for="agree-two">개인정보 수집 및 이용에 동의 <span>(필수)</span></label>
-      </div>
-      </article>
+          <div class="input-section">
+            <input type="checkbox" id="agree-two" name="agree" value="Y" class="agree-check" />
+            <label for="agree-two">개인정보 수집 및 이용에 동의 <span class="required-check">(필수)</span></label>
+          </div>
+        </article>
 
-      <!-- 이벤트 수신 -->
-      <article class="agree">
-        <textarea class="textarea">본 사이트에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화, 이메일로 받아보실 수 있습니다.
+        <!-- 이벤트 수신 -->
+        <article class="agree">
+          <textarea class="textarea">본 사이트에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화, 이메일로 받아보실 수 있습니다.
 
 일부 서비스(별도 회원 체계로 운영하거나 가입 이후 추가 가입하여 이용하는 서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며, 이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.
         </textarea>
-      <div class="input-section">
-        <input type="checkbox" id="agree-three" name="agree" value="Y" class="agree-check" />
-        <label for="agree-three">이벤트성 정보 수신 동의 <span>(선택)</span></label>
-      </div>
-      <!-- JS로 구현해야함 -->
-      <div class="input-section">
-        <input type="checkbox" id="agree-all" name="agree" value="Y" class="agree-all" />
-        <label for="agree-all">이용약관에 모두 동의합니다.</label>
-      </div>
-      </article>
+          <div class="input-section">
+            <input type="checkbox" id="agree-three" name="agree" value="Y" class="agree-check" />
+            <label for="agree-three">이벤트성 정보 수신 동의 <span class="choice-Check">(선택)</span></label>
+          </div>
+          <!-- JS로 구현해야함 -->
+          <div class="input-section">
+            <input type="checkbox" id="agree-all" name="agree" value="Y" class="agree-all" />
+            <label for="agree-all">이용약관에 모두 동의합니다.</label>
+          </div>
+        </article>
 
-      <article class="button-article">
-        <button class="join-btn" id="btn-back">Back</button>
-        <button class="join-btn" id="btn-next">Next</button>
-      </article>
-      <article class="join-article">
-        <span>회사, 동아리등 단체에서 사용할 ID가 필요하신가요?</span> <a class="all-join" href="#">단체 회원 가입</a>
-      </article>
-  </section>
-  </div>
+        <article class="button-article">
+          <button class="join-btn" id="btn-back">Back</button>
+          <button class="join-btn" id="btn-next">Next</button>
+        </article>
+        <article class="join-article">
+          <span>회사, 동아리등 단체에서 사용할 ID가 필요하신가요?</span> <a class="all-join" href="#">단체 회원 가입</a>
+        </article>
+    </section>
+    </div>
+  </form>
   <!-- Json으로 구분선 넣기 -->
   <footer>
     <a class="foo" href="#">이용약관 |</a>
     <a class="foo" href="#">개인정보 처리방침 |</a>
     <a class="foo" href="#">책임의 한계와 법적고지 |</a>
     <a class="foo" href="#">회원정보 고객센터</a>
-</footer>
-<script src="agree.js"></script>
+  </footer>
+  <script src="agree.js"></script>
 </body>
 
 </html>

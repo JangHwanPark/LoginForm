@@ -42,6 +42,22 @@ body {
     margin-top: 2.5em;
 }
 
+.required-check {
+    color:red;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+.choice-Check {
+    color:green;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+#checkAll-Text {
+    font-weight: 700;
+}
+
 /* 텍스트 박스 (약관 내용) */
 .textarea{
     margin: 0 auto;
