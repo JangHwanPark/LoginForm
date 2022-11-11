@@ -65,6 +65,10 @@ label {
     height: 11em;
 }
 
+.textarea::-webkit-scrollbar {
+    display: none;
+}
+
 /* 버튼 */
 .button-article {
     text-align: center;
@@ -116,4 +120,60 @@ footer {
 .foo {
     text-decoration: none;
     color:#000;
+}
+
+/* 미디어쿼리(반응형) */
+/* 768px 이하 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 21em;
+        height: 50em;
+    }
+
+    .textarea {
+        width: 25em;
+        height: 11em;
+    }
+
+    .join-btn {
+        width: 5em;
+        height: 2em;
+    }
+
+    #btn-next {
+        margin-left: 0.5em;
+    }
+
+    footer a {
+        font-size: 0.7em;
+    }
+}
+
+/* 480px 이하 */
+@media screen and (max-width: 480px) {
+    .container {
+        margin:0 auto;
+        text-align: center;
+        width: 19em;
+        height: 42em;
+        border: none;
+    }
+
+    .textarea {
+        width: 25em;
+        height: 8em;
+    }
+
+    .join-btn {
+        width: 4em;
+        height: 1.5em;
+    }
+
+    #btn-next {
+        margin-left: 0.5em;
+    }
+
+    footer a {
+        display: none;
+    }
 }
