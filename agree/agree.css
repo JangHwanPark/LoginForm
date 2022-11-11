@@ -151,17 +151,32 @@ footer {
 
 /* 480px 이하 */
 @media screen and (max-width: 480px) {
-    .container {
+    body {
+        width: 100%;
+        height: 100%;
         margin:0 auto;
+    }
+
+    .container {
         text-align: center;
-        width: 19em;
-        height: 42em;
+        margin: 0 auto;
+        padding: 0;
+        height: 45em;
         border: none;
     }
 
     .textarea {
         width: 25em;
         height: 8em;
+    }
+
+    .input-section {
+        float: left;
+        font-size: 0.8em;
+    }
+
+    .button-article {
+        display: inline-block;
     }
 
     .join-btn {
@@ -171,9 +186,5 @@ footer {
 
     #btn-next {
         margin-left: 0.5em;
-    }
-
-    footer a {
-        display: none;
     }
 }
