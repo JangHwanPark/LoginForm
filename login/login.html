@@ -14,8 +14,9 @@
 </head>
 
 <body>
-    <main id="content">
-        <div class="container">
+    <!--main id="content"-->
+    <main id="container">
+        <div class="content">
             <form action="login" method="post">
                 <section id="login_box">
                     <header id="logo">
@@ -24,34 +25,36 @@
                     <article class="login_info" id="id_box">
                         <label for="username"></label>
                         <i class="fa-solid fa-user"></i>
-                        <input class="text_input" type="text" name="username" id="username" placeholder="아이디를 입력하세요.">
+                        <input class="text_input" type="text" name="username" id="username" placeholder="Your ID.">
                     </article>
-
+                    <article class="login_check" id="fine_box">
+                        <span class="fine" id="fine_id">Forgot your ID</span>
+                    </article>
                     <article class="login_info" id="pwd_box">
                         <label for="password"></label>
                         <i class="fa-solid fa-lock"></i>
                         <input class="text_input" type="password" name="password" id="password"
-                            placeholder="비밀번호를 입력하세요.">
+                            placeholder="Your password.">
+                    </article>
+                    <article class="login_check" id="fine_box">
+                        <span class="fine" id="fine_pwd">Forgot your password</span>
                     </article>
 
                     <article class="login_submit" id="submit_box">
-                        <button type="button" id="Login" class="input_submit">로그인</button>
+                        <button type="button" id="Login" class="input_submit">Login</button>
                     </article>
-
+                    <article class="login_check" id="fine_box">
+                        <span class="fine" id="join">Join Membership</span>
+                    </article>
                     <article class="login_remember" id="remember_box">
                         <label for="remember">Remember me</label>
                         <input type="checkbox" name="remember" id="remember">
                     </article>
-
-                    <article class="login_check" id="fine_box">
-                        <span class="fine" id="join">회원가입 |</span>
-                        <span class="fine" id="fine_id">아이디 찾기 |</span>
-                        <span class="fine" id="fine_pwd">비밀번호 찾기</span>
-                    </article>
+                
 
                 </section>
                 <section id="social_login">
-                    <header id="social_account">소셜 계정으로 로그인</header>
+                    <header id="social_account">Social Account</header>
 
                     <label for="kakao"></label>
                     <button  id="kakao" class="button_login" type="button" name="kakao">

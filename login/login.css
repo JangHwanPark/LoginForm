@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
 
-/* body 중앙정렬 */
+/* body center */
 body {
     font-family: 'Josefin Slab', serif;
     position: absolute;
@@ -9,26 +9,33 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#content {
+/* login box */
+#container {
+    width: 30em;
+    height: 35em;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
     z-index: 1;
     padding: 0;
     margin: 0;
     overflow: hidden;
     text-align: center;
-}
-
-.container {
-    padding: 4em 2em 3em 2em;
-    border: 1px solid #000;
+    background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0 0 10px #000;
 }
 
 #login_box {
-    width: 30em;
-    height: 100%;
+    box-sizing: border-box;
+    width: 480px;
+    margin: 0 auto;
 }
 
 #logo {
+    margin-top: 1.5em;
     font-size: 2.5em;
 }
 
@@ -72,17 +79,128 @@ body {
     margin-bottom: 0.5em;
 }
 
+/* Button CSS */
+@-webkit-keyframes criss-cross-left {
+    0% {
+        left: -20px;
+    }
+
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-left {
+    0% {
+        left: 15px;
+    }
+
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        left: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@-webkit-keyframes criss-cross-right {
+    0% {
+        right: 15px;
+    }
+
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@keyframes criss-cross-right {
+    0% {
+        right: -20px;
+    }
+
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px;
+    }
+
+    100% {
+        right: 50%;
+        width: 375px;
+        height: 375px;
+    }
+}
 
 .input_submit {
     width: 69%;
-    height: 2em;
+    height: 3em;
     border-radius: 5px;
     padding: 0 0.5em;
     margin: 0 auto;
-    border: 1px solid #000;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.2em;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+}
+
+.input_submit:before,
+.input_submit:after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.input_submit:before {
+    left: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.input_submit:after {
+    right: 15px;
+    transform: translate(50%, -50%);
+}
+
+.input_submit:hover {
+    color: #e3d5d3;
+}
+
+.input_submit:hover:before {
+    -webkit-animation: criss-cross-left 0.8s both;
+    animation: criss-cross-left 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.input_submit:hover:after {
+    -webkit-animation: criss-cross-right 0.8s both;
+    animation: criss-cross-right 0.8s both;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
 }
 
 .remember_box {
@@ -91,8 +209,11 @@ body {
 }
 
 #fine_box {
-    margin-top: 1.2em;
-    display: inline-block;
+    margin-top: 10px;
+    margin-right: 6em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    text-align: right;
 }
 
 #fine_box a {
@@ -125,5 +246,5 @@ footer {
 
 footer a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
