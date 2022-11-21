@@ -33,13 +33,13 @@ window.onload = function () {
   /** @function 로그인 버튼을 클릭하면 발생하는 이벤트입니다. */
   function login_link() {
     /** title(title_logo) 클릭시 window.location.href 이벤트가 발생합니다. */
-    if (title.onclick) window.location.href = "http://www.naver.com";
+    if (title.onclick) window.location.href = "#";
     /** submit(Login) 클릭시 window.location.href 이벤트가 발생합니다. */
-    if (submit.onclick) window.location.href = "http://www.naver.com";
+    if (submit.onclick) window.location.href = "#";
     /** fine class(계정정보 찾기)의 반복문입니다. 클릭시 window.location.href 이벤트가 발생합니다. */
     for (let i in fine) {
       if (fine[i].onclick) {
-        window.location.href = "http://www.naver.com";
+        window.location.href = "#";
         fine.onclick = login_link;
       }
     }
@@ -64,7 +64,7 @@ window.onload = function () {
     /** footer tag의 반복문입니다. 클릭시 window.location.href 이벤트가 발생합니다. */
     for (let i in foo) {
       if (foo[i].onclick) {
-        window.location.href = "http://www.naver.com";
+        window.location.href = "#";
         foo.onclick = login_link;
       }
     }

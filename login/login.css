@@ -152,6 +152,13 @@ body {
     }
 }
 
+*:before,
+*:after {
+    z-index: -1;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+
 .input_submit {
     width: 69%;
     height: 3em;
@@ -159,50 +166,54 @@ body {
     padding: 0 0.5em;
     margin: 0 auto;
     text-transform: uppercase;
-    position: relative;
     overflow: hidden;
+    position: relative;
     color: #000;
 }
 
 .input_submit:before,
 .input_submit:after {
+    content: "";
     position: absolute;
     top: 50%;
     content: "";
     width: 20px;
     height: 20px;
+    color:#e3d5d3;
     background-color: #000000;
     border-radius: 50%;
 }
 
 .input_submit:before {
-    left: 15px;
+    left: -20px;
     transform: translate(-50%, -50%);
 }
 
 .input_submit:after {
-    right: 15px;
+    right: -20px;
     transform: translate(50%, -50%);
 }
 
 .input_submit:hover {
-    color: #e3d5d3;
+    z-index: 1;
+    color: #fff;
 }
 
 .input_submit:hover:before {
     -webkit-animation: criss-cross-left 0.8s both;
-    animation: criss-cross-left 0.8s both;
+            animation: criss-cross-left 0.8s both;
     -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+            animation-direction: alternate;
 }
 
 .input_submit:hover:after {
     -webkit-animation: criss-cross-right 0.8s both;
-    animation: criss-cross-right 0.8s both;
+            animation: criss-cross-right 0.8s both;
     -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+            animation-direction: alternate;
 }
 
+/* remeber me */
 .remember_box {
     margin-top: 0.5em;
     font-size: 1.1em;
